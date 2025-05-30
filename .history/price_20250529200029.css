@@ -195,7 +195,7 @@ header {
   background-color: #1b1a50;
 }
 /* Pre wedding card */
-.pw-card {
+.event-card {
   background-color: rgba(255, 239, 220, 0.95);
   color: #2c2c2c;
   border-radius: 10px;
@@ -205,12 +205,12 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pw-card:hover {
+.event-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
 
-.pw-card h3 {
+.event-card h3 {
   margin-bottom: 10px;
   font-size: 22px;
 }
@@ -222,13 +222,13 @@ header {
   margin-bottom: 15px;
 }
 
-.pw-card ul {
+.event-card ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 20px;
 }
 
-.pw-card ul li {
+.event-card ul li {
   margin: 8px 0;
   padding-left: 20px;
   position: relative;
@@ -255,69 +255,5 @@ header {
 }
 
 .pw-card button:hover {
-  background-color: #1b1a50;
-}
-
-/* Wedding card */
-.wed-card {
-  background-color: rgba(255, 239, 220, 0.95);
-  color: #2c2c2c;
-  border-radius: 10px;
-  padding: 30px 20px;
-  width: 250px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.wed-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
-}
-
-.wed-card h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 20px;
-  color: #2c2c2c;
-  margin-bottom: 15px;
-}
-
-.wed-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-
-.wed-card ul li {
-  margin: 8px 0;
-  padding-left: 20px;
-  position: relative;
-}
-
-.wed-card ul li :before {
-  content: "●";
-  position: absolute;
-  left: 0;
-  color: #1d1e7d;
-  font-size: 14px;
-}
-
-.wed-card button {
-  background-color: #2d2c6e;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.wed-card button:hover {
   background-color: #1b1a50;
 }
