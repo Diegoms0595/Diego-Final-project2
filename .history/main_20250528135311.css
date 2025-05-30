@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: url('./Assets/image 2.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ====== HEADER ====== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: slideDown 1s ease-in-out;
+}
+
+.logo img {
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f4c370;
+  transform: translateY(-2px);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f4c370;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ====== HERO SECTION ====== */
+
+.hero {
+  padding: 120px 60px;
+  max-width: 700px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  color: #f4c370;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  transition: letter-spacing 0.3s ease;
+}
+
+.hero-text h1:hover {
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 40px;
+  max-width: 500px;
+  opacity: 0.95;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hero-text p:hover {
+  transform: scale(1.02);
+}
+
+/* ====== BUTTON ====== */
+
+.book-now {
+  display: inline-block;
+  background-color: #f4c370;
+  color: #222;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.book-now:hover {
+  background-color: #dcae3b;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* ====== ANIMATIONS ====== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+

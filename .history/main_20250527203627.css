@@ -1,0 +1,92 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-image: url('./Assets/image\ 2.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #f5f5f5;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+section {
+  padding: 120px 60px;
+  max-width: 700px;
+}
+
+section h1 {
+  font-size: 56px;
+  color: #f4c370;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+section h1 p {
+  font-size: 56px;
+  font-weight: bold;
+  color: #f4c370;
+}
+
+section > p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+button,
+.book-now {
+  background-color: #f4c370;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #222;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.book-now:hover {
+  background-color: #dcae3b;
+}
