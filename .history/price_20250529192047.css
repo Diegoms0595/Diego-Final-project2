@@ -193,4 +193,8 @@ header {
 .event-card button:hover {
   background-color: #1b1a50;
 }
+.event-section {
+  padding-top: 150px;
+  text-align: center;
+}
 

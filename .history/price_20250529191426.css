@@ -179,18 +179,4 @@ header {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.event-card button {
-  background-color: #2d2c6e;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.event-card button:hover {
-  background-color: #1b1a50;
-}
 

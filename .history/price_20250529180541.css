@@ -130,7 +130,7 @@ header {
 .price-card button:hover {
   background-color: #1b1a50;
 }
-/* Event car */
+
 .event-card {
     display: flex;
   justify-content: center;
@@ -151,46 +151,3 @@ header {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
-.event-card h4 {
-    margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.event-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-.event-card ul li :before {
-  content: "●";
-  position: absolute;
-  left: 0;
-  color: #1d1e7d;
-  font-size: 14px;
-}
-.event-card button {
-  background-color: #2d2c6e;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.event-card button {
-  background-color: #2d2c6e;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.event-card button:hover {
-  background-color: #1b1a50;
-}
-

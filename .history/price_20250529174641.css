@@ -46,7 +46,7 @@ header {
   color: #f5c47c;
 }
 
-
+/* Sección Pricelist */
 .pricelist-section {
   padding-top: 150px;
   text-align: center;
@@ -59,7 +59,7 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* cards */
+/* Tarjetas */
 .cards-container {
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@ header {
   padding: 20px;
 }
 
-.price-card {
+.price-card , .event-card {
   background-color: rgba(255, 239, 220, 0.95);
   color: #2c2c2c;
   border-radius: 10px;
@@ -78,12 +78,12 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.price-card:hover {
+.price-card, .event-card :hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
 
-.price-card h3 {
+.price-card h3, .event-card h4 {
   margin-bottom: 10px;
   font-size: 22px;
 }
@@ -95,19 +95,19 @@ header {
   margin-bottom: 15px;
 }
 
-.price-card ul {
+.price-card ul, .event-card ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 20px;
 }
 
-.price-card ul li {
+.price-card ul li, .event-card ul li {
   margin: 8px 0;
   padding-left: 20px;
   position: relative;
 }
 
-.price-card ul li :before {
+.price-card ul li .event-card ul li:before {
   content: "●";
   position: absolute;
   left: 0;
@@ -128,69 +128,6 @@ header {
 }
 
 .price-card button:hover {
-  background-color: #1b1a50;
-}
-/* Event car */
-.event-card {
-    display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-.event-card{
-   background-color: rgba(255, 239, 220, 0.95);
-  color: #2c2c2c;
-  border-radius: 10px;
-  padding: 30px 20px;
-  width: 250px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.event-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
-}
-.event-card h4 {
-    margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.event-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-.event-card ul li :before {
-  content: "●";
-  position: absolute;
-  left: 0;
-  color: #1d1e7d;
-  font-size: 14px;
-}
-.event-card button {
-  background-color: #2d2c6e;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.event-card button {
-  background-color: #2d2c6e;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.event-card button:hover {
   background-color: #1b1a50;
 }
 

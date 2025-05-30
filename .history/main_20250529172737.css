@@ -45,7 +45,7 @@ header {
   color: #f5c47c;
 }
 
-
+/* ======== HERO SECTION ======== */
 .hero {
   height: 100vh;
   background-image: url('./Assets/image\ 2.png');
@@ -96,7 +96,7 @@ header {
   animation: slideUp 2.5s ease forwards;
 }
 
-
+/* ======== BOOK NOW BUTTON ======== */
 .book-now {
   display: inline-block;
   background-color: #f5c47c;
@@ -113,6 +113,7 @@ header {
   transform: scale(1.05);
 }
 
+/* ======== ANIMATIONS ======== */
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
