@@ -10,7 +10,7 @@ body {
     background-size: cover;
     color: #063504;
     line-height: 1.6;
-    background-image: url('./Assets/pexels-igor-link-334249-933118.jpg');
+     background-image: url('./Assets/pexels-igor-link-334249-933118.jpg');
 }
 
 header {
@@ -35,8 +35,7 @@ header {
     gap: 30px;
 }
 
-
-.nav-links > li > a {
+.nav-links li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
@@ -44,7 +43,7 @@ header {
     transition: color 0.3s ease;
 }
 
-.nav-links li:hover + li > a {
+.nav-links li a:hover {
     color: #f5c47c;
 }
 
@@ -53,7 +52,7 @@ header {
     color: #d8a558;
     margin-bottom: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding-top: 75px;
+    padding-top: 190px;
     text-align: center;
 }
 
@@ -65,15 +64,16 @@ header {
 
 .form {
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     padding: 25px 30px;
     margin: 160px auto;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     gap: 15px;
+    background-color: #b8e0bb;
 }
 
 .form-row {
@@ -81,7 +81,7 @@ header {
     gap: 10px;
 }
 
-.form-row > input {
+.form-row input {
     flex: 1;
 }
 
@@ -112,16 +112,14 @@ button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .hero {
-    height: 100vh;
-    background-image: url('./Assets/Carly-Dylan-Wedding-Film+371_websize.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-    position: relative;
+  height: 100vh;
+  background-image: url('./Assets/Carly-Dylan-Wedding-Film+371_websize.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  position: relative;
 }
-
 

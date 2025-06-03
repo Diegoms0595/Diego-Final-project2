@@ -35,7 +35,7 @@ header {
     gap: 30px;
 }
 
-
+/* Keep child selectors here as they were */
 .nav-links > li > a {
     color: #fff;
     text-decoration: none;
@@ -44,6 +44,7 @@ header {
     transition: color 0.3s ease;
 }
 
+/* Replace hover with sibling selector: when hovering an li, style the next li's a */
 .nav-links li:hover + li > a {
     color: #f5c47c;
 }
@@ -81,6 +82,7 @@ header {
     gap: 10px;
 }
 
+/* Replace descendant selector with child selector */
 .form-row > input {
     flex: 1;
 }

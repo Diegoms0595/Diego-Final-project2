@@ -44,6 +44,7 @@ header {
     transition: color 0.3s ease;
 }
 
+/* Replace hover with sibling selector: when hovering an li, style the next li's a */
 .nav-links li:hover + li > a {
     color: #f5c47c;
 }
