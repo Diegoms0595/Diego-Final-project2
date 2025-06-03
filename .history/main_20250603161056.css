@@ -175,29 +175,30 @@ header {
 }
 footer .FAQ {
   max-width: 600px;
+  margin: 20px auto;
   padding: 15px;
   border-radius: 10px;
   align-items: start;
-  text-align: left;
 }
 
 footer .FAQ h3 {
   text-align: left;
   margin-bottom: 15px;
   font-size: 1.5rem;
-  color: #777373;
+  color: #222;
 }
 
 
 footer summary {
   font-weight: bold;
   cursor: pointer;
-  color: #777373;
+  color: #333;
 }
 
 footer summary::after {
+  content: " ▼";
   float: left;
- color: #777373;
+  color: #999;
 }
 
 
