@@ -55,20 +55,34 @@ header {
     padding-top: 190px;
     text-align: center;
 }
-
-.p {
-    font-size: small;
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-.form {
+.form .name-fields {
     display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 30px;
-    margin: 150px auto;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    font-family: sans-serif;
-    gap: 20px;
+    gap: 10px;
+    width: 100%;
 }
+
+.form .name-fields input {
+    flex: 1;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a173f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+}
+
+

@@ -63,6 +63,7 @@ header {
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 350px;
     padding: 30px;
     margin: 150px auto;
@@ -72,3 +73,9 @@ header {
     font-family: sans-serif;
     gap: 20px;
 }
+
+#emailtag {
+    justify-content: center;
+    padding-left: 100px;
+}
+
