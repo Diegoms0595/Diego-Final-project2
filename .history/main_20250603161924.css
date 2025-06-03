@@ -185,21 +185,21 @@ header {
   }
 
   footer details {
-    padding: 4px;
+    padding: 8px;
     margin-bottom: 8px;
   }
 
   footer summary {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   footer details p {
-    font-size: 9px;
+    font-size: 13px;
+    line-height: 1.4;
   }
 }
 footer .FAQ {
   max-width: 600px;
-  padding: 15px;
   border-radius: 10px;
   align-items: start;
   text-align: left;
@@ -213,13 +213,13 @@ footer .FAQ h3 {
 }
 
 
-footer li {
+footer summary {
   font-weight: bold;
   cursor: pointer;
   color: #777373;
 }
 
-footer li::after {
+footer summary::after {
   float: left;
  color: #777373;
 }

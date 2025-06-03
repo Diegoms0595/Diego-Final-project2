@@ -213,13 +213,13 @@ footer .FAQ h3 {
 }
 
 
-footer li {
+footer summary {
   font-weight: bold;
   cursor: pointer;
   color: #777373;
 }
 
-footer li::after {
+footer summary::after {
   float: left;
  color: #777373;
 }
