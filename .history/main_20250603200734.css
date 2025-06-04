@@ -85,11 +85,12 @@ header {
 }
 
 .hero-text h1:hover {
-  transform: scale(1.05);
+  transform: scale(1.0);
 }
 
 .hero-text p {
   font-size: 16px;
+  line-height: 1.8;
   margin-bottom: 30px;
   color: #fff;
   animation: slideUp 2.5s ease forwards;
@@ -109,7 +110,7 @@ header {
 
 .book-now:hover {
   background-color: #e2a14d;
-  transform: scale(1.04);
+  transform: scale(1.0);
 }
 
 @keyframes fadeIn {

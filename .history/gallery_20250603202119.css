@@ -1,5 +1,4 @@
-
-* {
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,6 +89,7 @@ header {
 
 .hero-text p {
   font-size: 16px;
+  line-height: 1.8;
   margin-bottom: 30px;
   color: #fff;
   animation: slideUp 2.5s ease forwards;
@@ -109,7 +109,7 @@ header {
 
 .book-now:hover {
   background-color: #e2a14d;
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 @keyframes fadeIn {
@@ -121,107 +121,25 @@ header {
   0% { opacity: 0; transform: translateY(40px); }
   100% { opacity: 1; transform: translateY(0); }
 }
-
-
-/* 768px */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    gap: 10px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 10px 20px;
-    width: 100%;
-  }
-
-  .nav-links li {
-    flex: 1 1 45%;
-  }
-
-  .nav-links li a {
-    font-size: 16px;
-    display: block;
-    width: 100%;
-  }
-
-  .hero {
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 36px;
-  }
-
-  .hero-text p {
-    font-size: 14px;
-  }
-
-  .book-now {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-   footer .FAQ {
-    max-width: 100%;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  footer .FAQ h3,
-  footer .FAQ h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-
-  footer details {
-    padding: 4px;
-    margin-bottom: 8px;
-  }
-
-  footer summary {
-    font-size: 11px;
-  }
-
-  footer details p {
-    font-size: 9px;
-  }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 150px 50px 50px;
 }
-footer .FAQ {
-  max-width: 600px;
-  padding: 15px;
+
+.gallery img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
   border-radius: 10px;
-  align-items: start;
-  text-align: left;
+  transition: transform 0.3s ease;
 }
 
-footer .FAQ h3 {
-  text-align: left;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  color: #777373;
+.gallery img:hover {
+  transform: scale(1.06);
 }
 
-
-footer li {
-  font-weight: bold;
-  cursor: pointer;
-  color: #777373;
-}
-
-footer li::after {
-  float: left;
- color: #777373;
-}
 
 
 

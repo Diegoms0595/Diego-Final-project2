@@ -1,8 +1,11 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -11,12 +14,11 @@ body {
   background-color: black;
 }
 
-/*  HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 1.25rem 3.125rem;
   position: absolute;
   top: 0;
   width: 100%;
@@ -24,20 +26,19 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 2.5rem;
 }
 
-/*  NAVIGATION */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -45,15 +46,14 @@ header {
   color: #f5c47c;
 }
 
-
 .hero {
   height: 100vh;
-  background-image: url('./Assets/image\ 2.png');
+  background-image: url('./Assets/image 2.png');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  padding-left: 100px;
+  padding-left: 6.25rem;
   position: relative;
 }
 
@@ -71,15 +71,15 @@ header {
 .hero-text {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 37.5rem;
   animation: fadeIn 2s ease-out forwards;
 }
 
 .hero-text h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   color: #f5c47c;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   line-height: 1.2;
   transition: transform 0.3s ease;
 }
@@ -89,19 +89,19 @@ header {
 }
 
 .hero-text p {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.875rem;
   color: #fff;
   animation: slideUp 2.5s ease forwards;
 }
-
 
 .book-now {
   display: inline-block;
   background-color: #f5c47c;
   color: black;
-  padding: 12px 25px;
-  border-radius: 8px;
+  padding: 0.75rem 1.5625rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -109,33 +109,50 @@ header {
 
 .book-now:hover {
   background-color: #e2a14d;
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(-20px); }
+  0% { opacity: 0; transform: translateY(-1.25rem); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-  0% { opacity: 0; transform: translateY(40px); }
+  0% { opacity: 0; transform: translateY(2.5rem); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 0.9375rem;
+  padding: 9.375rem 3.125rem 3.125rem;
+}
 
-/* 768px */
-@media (max-width: 768px) {
+.gallery img {
+  width: 100%;
+  height: 18.125rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.06);
+}
+
+@media (max-width: 48rem) {
   header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 20px;
-    gap: 10px;
+    padding: 0.9375rem 1.25rem;
+    gap: 0.625rem;
   }
 
   .nav-links {
     flex-wrap: wrap;
     display: flex;
-    gap: 10px 20px;
+    gap: 0.625rem 1.25rem;
     width: 100%;
   }
 
@@ -144,13 +161,13 @@ header {
   }
 
   .nav-links li a {
-    font-size: 16px;
+    font-size: 1rem;
     display: block;
     width: 100%;
   }
 
   .hero {
-    padding: 20px;
+    padding: 1.25rem;
     justify-content: center;
     text-align: center;
   }
@@ -160,57 +177,58 @@ header {
   }
 
   .hero-text h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .hero-text p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .book-now {
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 0.625rem 1.25rem;
   }
-   footer .FAQ {
+
+  footer .FAQ {
     max-width: 100%;
-    padding: 10px;
-    font-size: 14px;
+    padding: 0.625rem;
+    font-size: 0.875rem;
   }
 
   footer .FAQ h3,
   footer .FAQ h2 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   footer details {
-    padding: 4px;
-    margin-bottom: 8px;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   footer summary {
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
 
   footer details p {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 }
+
 footer .FAQ {
-  max-width: 600px;
-  padding: 15px;
-  border-radius: 10px;
+  max-width: 37.5rem;
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
   align-items: start;
   text-align: left;
 }
 
 footer .FAQ h3 {
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   font-size: 1.5rem;
   color: #777373;
 }
-
 
 footer li {
   font-weight: bold;
@@ -220,8 +238,10 @@ footer li {
 
 footer li::after {
   float: left;
- color: #777373;
+  color: #777373;
 }
+
+
 
 
 
