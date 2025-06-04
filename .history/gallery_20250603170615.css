@@ -1,0 +1,224 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/*  HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/*  NAVIGATION */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f5c47c;
+}
+
+
+.hero {
+  height: 100vh;
+  background-image: url('./Assets/image\ 2.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  color: #f5c47c;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  transition: transform 0.3s ease;
+}
+
+.hero-text h1:hover {
+  transform: scale(1.05);
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #fff;
+  animation: slideUp 2.5s ease forwards;
+}
+
+
+.book-now {
+  display: inline-block;
+  background-color: #f5c47c;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #e2a14d;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px 20px;
+    width: 100%;
+  }
+
+  .nav-links li {
+    flex: 1 1 45%;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .book-now {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+   footer .FAQ {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer .FAQ h3,
+  footer .FAQ h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  footer details {
+    padding: 4px;
+    margin-bottom: 8px;
+  }
+
+  footer summary {
+    font-size: 11px;
+  }
+
+  footer details p {
+    font-size: 9px;
+  }
+}
+footer .FAQ {
+  max-width: 600px;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: start;
+  text-align: left;
+}
+
+footer .FAQ h3 {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #777373;
+}
+
+
+footer li {
+  font-weight: bold;
+  cursor: pointer;
+  color: #777373;
+}
+
+footer li::after {
+  float: left;
+ color: #777373;
+}
