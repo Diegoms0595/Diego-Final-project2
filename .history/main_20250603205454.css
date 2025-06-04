@@ -6,7 +6,7 @@
 }
 
 body {
- font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: black;
 }
@@ -105,7 +105,7 @@ header {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .book-now:hover {
@@ -205,27 +205,24 @@ footer .FAQ {
   text-align: left;
 }
 
-footer .FAQ h3,
-footer li,
-footer li::after {
-  color: #777373;
-}
-
 footer .FAQ h3 {
   text-align: left;
   margin-bottom: 15px;
   font-size: 1.5rem;
+  color: #777373;
 }
+
 
 footer li {
   font-weight: bold;
   cursor: pointer;
+  color: #777373;
 }
 
 footer li::after {
   float: left;
+ color: #777373;
 }
-
 
 
 
