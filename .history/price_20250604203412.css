@@ -297,6 +297,7 @@ header {
 }
 
 .wed-card ul li :before {
+  content: "●";
   position: absolute;
   left: 0;
   color: #1d1e7d;
